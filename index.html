@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+       
+      <title>Hotel Survey Form</title>
+      
+      <meta charset="utf-8">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+      <meta name="description" content="A survey form used by a hotel to get the satisfaction level of visitors">
+      
+      <meta name="author" content="Edward Mc Evoy 2019">
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <style type="text/css">
+        HTML CSS JSResult Skip Results Iframe
+.container{
+  margin-bottom:5%;
+}
+
+#form-header{
+  margin-top:5%;
+  text-align:center;
+}
+
+#form-tagline{
+  background: #3ac5ce;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  color:#ffffff;
+  margin-top:5%;
+  padding: 4%;
+  text-align:center;
+}
+
+#form-tagline .fa{
+  margin-bottom:15%;
+}
+
+#form-tagline h2 {
+  margin-bottom:15%;
+}
+
+#form-content{
+  background: #f4f4f4;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius:0.5rem;
+  margin-top:5%;
+  padding: 3%;
+}
+
+.form-group{
+  margin-top:5%;
+}
+
+.contact{
+  padding: 4%;
+  height: 400px;
+}
+
+.control-label{
+  font-size:16px;
+  font-weight:600;
+}
+
+div .submit-button{
+  margin-top:3%;
+  text-align:right;
+}
+
+button#submit{
+  white-space: normal;
+  width:auto;
+  background: #1faa56;
+  color: #ffffff;
+  font-weight: 600;
+  width: 25%;
+}
+.img-responsive{
+  max-width: 100%;
+  height: auto;
+}
+      </style>
+    </head>
+    
+  <body>
+      
+    <div class="container"> <!-- open container -->
+       <div class="row"> <!--  open row -->
+         
+         <div id="form-header" class="col-12">
+           <!-- <h1 id="title">Hotel Survey Form</h1> -->
+         </div>
+       </div> <!--  close row --> 
+      
+      <div class="row"> <!--  open row -->    
+          <div id="form-tagline" class="col-md-4 col-sm-2 col-xs-2">
+              <div class="form-tagline">
+                  <!-- <i class="fa fa-envelope fa-5x"></i> -->
+      
+                  <img src="image1.jpeg" alt="" width="300" height="500" class="img-fluid img-responsive">
+                  &nbsp;
+                  <img src="image2.jpeg" alt="" width="300" height="500" class="img-fluid img-responsive">
+                  <!-- <p id="description" class="lead">We really value your opinion</p> -->
+              </div>
+          </div>
+         
+          <div id="form-content" class="col-md-8">
+            
+            <form id="survey-form" onsubmit="return false;"> <!-- open form -->
+                                
+                <div class="row form-group">
+                   <div class="col-sm-3">
+                    <label id="name-label" class="control-label" for="name">*Nombre y Apellido:</label>
+                   </div>
+                  
+                   <div class="input-group col-sm-9">
+                     <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon-name"><i class="fa fa-user"></i></span>
+                     </div>                   
+                     <input id="name" type="text" class="form-control" placeholder="Please Enter Your Name" name="name" required>
+                   </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-sm-3">
+                     <label id="name-label" class="control-label" for="name">*Cedula:</label>
+                    </div>
+                   
+                    <div class="input-group col-sm-9">
+                      <div class="input-group-prepend">
+                         <span class="input-group-text" id="basic-addon-name"><i class="fa fa-user"></i></span>
+                      </div>                   
+                      <input id="name" type="text" class="form-control" placeholder="Please Enter Your Name" name="name" required>
+                    </div>
+                 </div>
+                 
+                <!-- <div class="form-group row">
+                   <div class="col-sm-3">
+                     <label id="email-label" class="control-label" for="email">*Email:</label>
+                   </div>
+                 
+                   <div class="input-group col-sm-9">
+                     <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon-mail"><i class="fa fa-envelope"></i></span>
+                     </div>
+                     <input type="email" class="form-control" id="email" placeholder="Enter Your Email" name="email" pattern="^[-+.\w]{1,64}@[-.\w]{1,64}\.[-.\w]{2,6}$" required>
+                   </div>
+                </div> -->
+                 
+                <div class="form-group row">
+                   <div class="col-sm-3">
+                     <label id="number-label" class="control-label" for="email">*No. Telefono:</label>
+                   </div>
+                 
+                   <div class="input-group col-sm-9">
+                     <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon-room"><i class="fa fa-door-open"></i></span>
+                     </div>
+                     <input type="number" class="form-control" id="number" placeholder="Enter Your Room Number" name="number" min="1" max="125" required>
+                   </div>
+                 </div>
+
+                 <div class="form-group row">
+                    <div class="col-sm-3">
+                      <label id="number-label" class="control-label" for="email">*Cantidad de Rifas:</label>
+                    </div>
+                  
+                    <div class="input-group col-sm-9">
+                      <div class="input-group-prepend">
+                         <span class="input-group-text" id="basic-addon-room"><i class="fa fa-door-open"></i></span>
+                      </div>
+                      <input type="number" class="form-control" id="number" placeholder="Enter Your Room Number" name="number" min="1" max="125" required>
+                    </div>
+                  </div>
+                 
+                <div class="form-group row">    
+                   <div class="col-sm-3">
+                     <label class="control-label"for="visit-purpose">*Banco Emisor:</label>
+                   </div>
+                   
+                   <div class="input-group col-sm-9">
+                     <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon-purpose"><i class="fa fa-bank"></i></span>
+                     </div>
+                     
+                     <select name="banco" class="form-control">
+                        <option value="">-</option>
+                        <option value="0156">100%BANCO</option>
+                        <option value="0196">ABN AMRO BANK</option>
+                        <option value="0172">BANCAMIGA BANCO MICROFINANCIERO, C.A.</option>
+                        <option value="0171">BANCO ACTIVO BANCO COMERCIAL, C.A.</option>
+                        <option value="0166">BANCO AGRICOLA</option>
+                        <option value="0175">BANCO BICENTENARIO</option>
+                        <option value="0128">BANCO CARONI, C.A. BANCO UNIVERSAL</option>
+                        <option value="0164">BANCO DE DESARROLLO DEL MICROEMPRESARIO</option>
+                        <option value="0102">BANCO DE VENEZUELA S.A.I.C.A.</option>
+                        <option value="0114">BANCO DEL CARIBE C.A.</option>
+                        <option value="0149">BANCO DEL PUEBLO SOBERANO C.A.</option>
+                        <option value="0163">BANCO DEL TESORO</option>
+                        <option value="0176">BANCO ESPIRITO SANTO, S.A.</option>
+                        <option value="0115">BANCO EXTERIOR C.A.</option>
+                        <option value="0003">BANCO INDUSTRIAL DE VENEZUELA.</option>
+                        <option value="0173">BANCO INTERNACIONAL DE DESARROLLO, C.A.</option>
+                        <option value="0105">BANCO MERCANTIL C.A.</option>
+                        <option value="0191">BANCO NACIONAL DE CREDITO</option>
+                        <option value="0116">BANCO OCCIDENTAL DE DESCUENTO.</option>
+                        <option value="0138">BANCO PLAZA</option>
+                        <option value="0108">BANCO PROVINCIAL BBVA</option>
+                        <option value="0104">BANCO VENEZOLANO DE CREDITO S.A.</option>
+                        <option value="0168">BANCRECER S.A. BANCO DE DESARROLLO</option>
+                        <option value="0134">BANESCO BANCO UNIVERSAL</option>  
+                        <option value="0177">BANFANB</option>
+                        <option value="0146">BANGENTE</option>
+                        <option value="0174">BANPLUS BANCO COMERCIAL C.A</option>
+                        <option value="0190">CITIBANK.</option>
+                        <option value="0121">CORP BANCA.</option>
+                        <option value="0157">DELSUR BANCO UNIVERSAL</option>
+                        <option value="0151">FONDO COMUN</option>
+                        <option value="0601">INSTITUTO MUNICIPAL DE CR&#201;DITO POPULAR</option>
+                        <option value="0169">MIBANCO BANCO DE DESARROLLO, C.A.</option>
+                        <option value="0137">SOFITASA</option>
+                      </select>
+                     
+                   </div>     
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-3">
+                      <label id="number-label" class="control-label" for="email">*Referencia:</label>
+                    </div>
+                  
+                    <div class="input-group col-sm-9">
+                      <div class="input-group-prepend">
+                         <span class="input-group-text" id="basic-addon-room"><i class="fa fa-door-open"></i></span>
+                      </div>
+                      <input type="number" class="form-control" id="number" placeholder="Enter Your Room Number" name="number" min="1" max="125" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-3">
+                      <label id="number-label" class="control-label" for="email">*Monto:</label>
+                    </div>
+                  
+                    <div class="input-group col-sm-9">
+                      <div class="input-group-prepend">
+                         <span class="input-group-text" id="basic-addon-room"><i class="fa fa-door-open"></i></span>
+                      </div>
+                      <input type="number" class="form-control" id="number" placeholder="Enter Your Room Number" name="number" min="1" max="125" required>
+                    </div>
+                  </div>
+              <hr>  
+                 
+                  <small>
+                    Promoción Aprobada por La <strong>SUNDDE</strong> 
+ <strong>Inversiones Salas y Vargas 2017, CA </strong>
+                  </small>
+                  <br><br>
+                 <small>
+                    Una vez realizada la compra, la empresa tiene <strong>24 horas</strong> para hacerte llegar los números asignados mediante un boleto electrónico que llegará a tu WhatsApp
+                 </small>
+          
+                
+              <div class="form-group row">
+                <div class="col-sm-12 submit-button">
+                  <button type="submit" id="submit" class="btn btn-default" aria-pressed="true">Comprar</button>
+                </div>
+              </div>
+                               
+            </form> <!-- close form -->
+
+        </div> <!-- close form content div -->
+               
+      </div> <!-- close row -->
+    </div><!--  close container -->
+    
+    <footer>
+     
+    </footer>
+
+    </body>
+</html>
+
